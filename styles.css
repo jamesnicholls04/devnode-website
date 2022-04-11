@@ -43,21 +43,28 @@ hr {
 
 .narrative-row {
   display: flex;
+  padding: 60px;
+  gap: 64px;
 }
 
-.narrative-item {
-  display: flex;
-  flex-direction: column;
+.narrative-item-short {
+  max-width: 300px;
 }
 
-.narrative-title {
+.narrative-item-long {
+  max-width: 400px;
+}
+
+.narrative-item-title {
   color: #02171e;
   font-size: 1rem;
+  padding-bottom: 16px;
 }
 
-.narrative-content {
+.narrative-item-content {
   color: #909496;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .navbar {

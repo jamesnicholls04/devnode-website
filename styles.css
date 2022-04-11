@@ -1,18 +1,75 @@
-body {
-  background-color: #fdfdff;
-  color: #02171e;
+* {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
 }
 
-hr {
-  border-top: 1px #e4e7ea;
+body {
+  background-color: #fdfdff;
+  color: #02171e;
+  margin: 0;
+  padding: 0;
 }
 
-.header {
-  font-size: 120px;
+hr {
+  border-top: 1px #e4e7ea;
+  margin: 0;
+  padding: 0;
 }
 
 .bottom-header {
-  color: #9b9fa1;
+  color: #909496;
+}
+
+.cta {
+  background-color: white;
+  color: #02171e;
+  border: 1px solid #dadde0;
+  border-radius: 5rem;
+  font-size: 1rem;
+  padding: 15px 39px;
+}
+
+.devnode-logo {
+  height: 48px;
+  width: 48px;
+}
+
+.header {
+  font-size: 7.5rem;
+  line-height: 103.333%;
+  padding: 60px;
+  margin: 0px;
+}
+
+.narrative-row {
+  display: flex;
+}
+
+.narrative-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.narrative-title {
+  color: #02171e;
+  font-size: 1rem;
+}
+
+.narrative-content {
+  color: #909496;
+  font-size: 1rem;
+}
+
+.navbar {
+  display: flex;
+  padding: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

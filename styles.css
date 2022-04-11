@@ -27,6 +27,17 @@ hr {
   border-radius: 5rem;
   font-size: 1rem;
   padding: 15px 39px;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+
+.cta:hover {
+  cursor: pointer;
+  background-color: #02171e;
+  color: white;
+  border: 1px solid #02171e;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
 }
 
 .devnode-logo {

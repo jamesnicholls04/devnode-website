@@ -148,7 +148,8 @@ p {
   }
 
   .header {
-    padding: 0.9rem 1.875rem;
+    padding: 0.7rem 1.875rem;
+    line-height: 120%;
   }
 
   .paragraph-break {

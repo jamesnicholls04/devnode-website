@@ -19,7 +19,7 @@ hr {
 p {
   color: #828586;
   font-size: 1.6rem;
-  line-height: 180%;
+  line-height: 175%;
   font-weight: 400;
 }
 
@@ -76,7 +76,7 @@ p {
 
 .navbar {
   display: flex;
-  padding: 60px;
+  padding: 4rem;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -86,4 +86,33 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1640px) {
+  p {
+    font-size: 1.55vw;
+  }
+
+  .paragraph-break {
+    display: none;
+  }
+
+  .description {
+    padding: 1vw 4vw;
+  }
+
+  .header {
+    font-size: 9vw;
+    padding: 2vw 4vw;
+  }
+
+  .navbar {
+    padding: 4vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  p {
+    font-size: 1.2rem;
+  }
 }

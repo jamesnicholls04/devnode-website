@@ -147,7 +147,19 @@ p {
     font-size: 1.15rem;
   }
 
+  .header {
+    padding: 1.25rem 1.875rem;
+  }
+
   .paragraph-break {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .layout {
+    height: 87vh;
+  }
+
+  hr {
+    opacity: 0;
   }
 }

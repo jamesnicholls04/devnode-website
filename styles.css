@@ -16,8 +16,20 @@ hr {
   padding: 0;
 }
 
+p {
+  color: #828586;
+  font-size: 1.6rem;
+  line-height: 180%;
+  font-weight: 400;
+}
+
 .bottom-header {
-  color: #909496;
+  background: url(images/devnode-gradient.svg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
 }
 
 .cta {
@@ -45,37 +57,21 @@ hr {
   width: 48px;
 }
 
-.header {
-  font-size: 7.5rem;
-  line-height: 103.333%;
-  padding: 60px;
-  margin: 0px;
-}
-
-.narrative-row {
-  display: flex;
-  padding: 60px;
-  gap: 64px;
-}
-
-.narrative-item-short {
-  max-width: 320px;
-}
-
-.narrative-item-long {
-  max-width: 440px;
-}
-
-.narrative-item-title {
+.devnode-text {
   color: #02171e;
-  font-size: 1rem;
-  padding-bottom: 16px;
 }
 
-.narrative-item-content {
-  color: #909496;
-  font-size: 1.25rem;
-  font-weight: 400;
+.description {
+  padding: 1rem 4rem;
+  margin: 0;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 8.5rem;
+  line-height: 108.82%;
+  padding: 2.5rem 4rem;
+  margin: 0px;
 }
 
 .navbar {

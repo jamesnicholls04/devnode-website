@@ -68,7 +68,7 @@ p {
 
 .header {
   font-weight: 600;
-  font-size: 8.5rem;
+  font-size: 8rem;
   line-height: 108.82%;
   padding: 2.5rem 3.5rem;
   margin: 0px;
@@ -98,7 +98,7 @@ p {
   }
 
   .header {
-    font-size: 9vw;
+    font-size: 8vw;
     padding: 2vw 3.5vw;
   }
 
@@ -127,7 +127,7 @@ p {
   }
 
   .header {
-    font-size: 10vw;
+    font-size: 9vw;
     padding: 1.875rem;
   }
 
@@ -148,7 +148,7 @@ p {
   }
 
   .header {
-    padding: 0.7rem 1.875rem;
+    padding: 0.25rem 1.875rem;
     line-height: 120%;
   }
 

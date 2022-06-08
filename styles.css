@@ -14,12 +14,13 @@ hr {
   border-top: 1px #e4e7ea;
   margin: 0;
   padding: 0;
+  opacity: 60%;
 }
 
 p {
   color: #828586;
   font-size: 1.6rem;
-  line-height: 175%;
+  line-height: 150%;
   font-weight: 400;
 }
 
@@ -32,23 +33,38 @@ p {
   font-weight: 600;
 }
 
-.cta {
-  background-color: white;
-  color: #02171e;
-  border: 1px solid #dadde0;
+.button {
   border-radius: 5rem;
   font-size: 1rem;
   padding: 15px 39px;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
 }
 
-.cta:hover {
+.button:hover {
   cursor: pointer;
+}
+
+.primary {
   background-color: #02171e;
   color: white;
   border: 1px solid #02171e;
-  transition-duration: 0.15s;
+}
+
+.primary:hover {
+  background: url(images/devnode-gradient.svg) no-repeat center;
+  border-color: transparent;
+}
+
+.secondary {
+  background-color: white;
+  color: #02171e;
+  border: 1px solid #dadde0;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.secondary:hover {
+  border: 1px solid #ababb1;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 
@@ -62,105 +78,137 @@ p {
 }
 
 .description {
-  padding: 1rem 3.5rem;
-  margin: 0;
-}
-
-.header {
-  font-weight: 600;
-  font-size: 8rem;
-  line-height: 108.82%;
-  padding: 2.5rem 3.5rem;
-  margin: 0px;
-}
-
-.navbar {
-  display: flex;
-  padding: 3.5rem;
-  align-items: flex-start;
-  justify-content: space-between;
+  width: 860px;
+  text-align: center;
+  padding: 0;
+  margin: 16px 0px;
 }
 
 .layout {
   height: 100vh;
+  background: url(images/devnode-bg.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.header {
+  font-weight: 500;
+  font-size: 6.25rem;
+  line-height: 112%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-content {
   display: flex;
-  flex-direction: column;
+  padding: 2.5rem 3.5rem;
+  margin: 0;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1680px) {
-  p {
-    font-size: 1.5vw;
-  }
+.content {
+  height: calc(100% - 240px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
 
-  .description {
-    padding: 1vw 3.5vw;
-  }
+.button-group {
+  display: flex;
+}
 
-  .header {
-    font-size: 8vw;
-    padding: 2vw 3.5vw;
-  }
+.spacer {
+  width: 16px;
+  height: 8px;
+}
 
-  .navbar {
-    padding: 3.5vw;
-  }
+.paragraph-break {
+  display: none;
+}
+
+.button-group-item {
+  width: 'auto';
 }
 
 @media screen and (max-width: 1400px) {
   p {
-    font-size: 1.9vw;
-  }
-
-  .paragraph-break {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  p {
-    font-size: 1.4rem;
+    font-size: calc(16px + 0.5vw);
   }
 
   .description {
-    padding: 0.75rem 1.875rem;
+    padding: 0.4vw;
+    max-width: 75%;
   }
 
   .header {
-    font-size: 9vw;
-    padding: 1.875rem;
+    font-size: 7vw;
   }
 
-  .navbar {
-    padding: 1.875rem;
+  .navbar-content {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .description {
+    width: 80%;
   }
 
   .paragraph-break {
     display: block;
     content: '';
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 }
 
-@media screen and (max-width: 680px) {
-  p {
-    font-size: 1.15rem;
+@media screen and (max-width: 640px) {
+  .content {
+    align-items: start;
   }
 
   .header {
-    padding: 0.25rem 1.875rem;
-    line-height: 120%;
+    font-size: 6.5vw;
+    text-align: start;
+  }
+
+  .description {
+    text-align: start;
+    max-width: 100%;
+    width: 100%;
   }
 
   .paragraph-break {
-    margin-top: 1rem;
+    display: block;
+    content: '';
+    margin-top: 0.5rem;
   }
 
-  .layout {
-    height: 87vh;
+  .content {
+    margin: 0 2.5rem;
   }
 
-  hr {
-    opacity: 0;
+  .button-group {
+    flex-direction: column;
+    width: 100%;
   }
+
+  .button-group-item {
+    width: 100%;
+  }
+}
+
+/* Preload DevNode gradient for smooth first transition in primary CTA */
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(images/devnode-gradient.svg);
 }

@@ -138,6 +138,7 @@ p {
 @media screen and (max-width: 1400px) {
   p {
     font-size: calc(16px + 0.5vw);
+    line-height: 115%;
   }
 
   .description {
@@ -162,7 +163,7 @@ p {
   .paragraph-break {
     display: block;
     content: '';
-    margin: 8px;
+    margin-top: 8px;
   }
 }
 
@@ -172,7 +173,7 @@ p {
   }
 
   .header {
-    font-size: 6.8vw;
+    font-size: 6.5vw;
     text-align: start;
   }
 

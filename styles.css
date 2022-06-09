@@ -170,12 +170,24 @@ p {
 }
 
 @media screen and (max-width: 640px) {
+  p {
+    font-size: 20px;
+  }
+
+  .paragraph-break {
+    display: block;
+    content: '';
+    margin-top: 12px;
+  }
+
   .content {
     align-items: start;
+    justify-content: end;
   }
 
   .header {
-    font-size: 6.5vw;
+    font-size: 6.7vw;
+    line-height: 120%;
     text-align: start;
   }
 

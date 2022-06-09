@@ -131,16 +131,10 @@ p {
   width: 'auto';
 }
 
-.spacer {
-  display: none;
-  height: 8px;
-  width: 8px;
-}
-
 @media screen and (max-width: 1400px) {
   p {
     font-size: calc(16px + 0.5vw);
-    line-height: 115%;
+    line-height: 135%;
   }
 
   .description {
@@ -163,21 +157,16 @@ p {
   }
 
   .paragraph-break {
-    display: block;
     content: '';
-    margin-top: 120px;
+    margin: 2em;
+    display: block;
+    margin-bottom: -20px;
   }
 }
 
 @media screen and (max-width: 640px) {
   p {
     font-size: 20px;
-  }
-
-  .paragraph-break {
-    display: block;
-    content: '';
-    margin-top: 120px;
   }
 
   .content {

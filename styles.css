@@ -184,7 +184,7 @@ p {
   }
 
   .content {
-    margin: 0 2.5rem;
+    margin: 0 1.5rem;
   }
 
   .button-group {
@@ -194,6 +194,14 @@ p {
 
   .button-group-item {
     width: 100%;
+  }
+
+  .navbar-content {
+    padding: 1rem 1.5rem;
+  }
+
+  .spacer {
+    color: green;
   }
 }
 

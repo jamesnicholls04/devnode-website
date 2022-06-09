@@ -120,11 +120,7 @@ p {
 
 .button-group {
   display: flex;
-}
-
-.spacer {
-  width: 16px;
-  height: 8px;
+  gap: 16px;
 }
 
 .paragraph-break {
@@ -133,6 +129,12 @@ p {
 
 .button-group-item {
   width: 'auto';
+}
+
+.spacer {
+  display: none;
+  height: 8px;
+  width: 8px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -190,6 +192,7 @@ p {
   .button-group {
     flex-direction: column;
     width: 100%;
+    gap: 8px;
   }
 
   .button-group-item {
@@ -201,7 +204,7 @@ p {
   }
 
   .spacer {
-    color: green;
+    display: block;
   }
 }
 

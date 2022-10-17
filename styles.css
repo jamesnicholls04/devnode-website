@@ -4,8 +4,8 @@
 }
 
 body {
-  background-color: #fdfdff;
-  color: #02171e;
+  background-color: #FC3532;
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -15,13 +15,6 @@ hr {
   margin: 0;
   padding: 0;
   opacity: 60%;
-}
-
-.description-text {
-  color: #828586;
-  font-size: 1.6rem;
-  line-height: 150%;
-  font-weight: 400;
 }
 
 .bottom-header {
@@ -44,9 +37,9 @@ hr {
 }
 
 .primary {
-  background-color: #02171e;
+  background-color: #2D65F6;
   color: white;
-  border: 1px solid #02171e;
+  border: 0px solid #02171e;
 }
 
 .primary:hover {
@@ -57,20 +50,25 @@ hr {
 .secondary {
   background-color: white;
   color: #02171e;
-  border: 1px solid #dadde0;
+  border: 0px solid #dadde0;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 
 .secondary:hover {
-  border: 1px solid #ababb1;
+  border: 0px solid #ababb1;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
 }
 
+.twitter {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+}
+
 .devnode-logo {
-  height: 48px;
-  width: 48px;
+  height: 40px;
 }
 
 .devnode-text {
@@ -82,13 +80,13 @@ hr {
   text-align: center;
   padding: 0;
   margin: 40px 0px;
+  font-size: 2rem;
+  line-height: 150%;
+  font-weight: 400;
 }
 
 .layout {
   height: 100vh;
-  background: url(images/devnode-bg.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
 }
 
 .header {
@@ -104,7 +102,7 @@ hr {
   display: flex;
   padding: 2rem 3.5rem;
   margin: 0;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -167,7 +165,7 @@ hr {
   }
 
   .header {
-    font-size: 6.7vw;
+    font-size: 3rem;
     line-height: 125%;
     text-align: start;
   }

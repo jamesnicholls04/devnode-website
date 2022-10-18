@@ -43,7 +43,6 @@ hr {
 }
 
 .primary:hover {
-  background: url(images/devnode-gradient.svg) no-repeat center;
   border-color: transparent;
 }
 
